@@ -36,11 +36,15 @@
 
   &__header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 
-    justify-content: space-between;
-
-    margin: 10px;
+    &-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px;
+    }
 
     &-left {
       display: flex;
@@ -100,9 +104,35 @@
 @media (max-width: 768px) {
   .media-list {
     flex-direction: column;
+
     &__column {
       width: 100%;
     }
+  }
 
+  .media-list-item {
+    flex-direction: row;
+
+    min-width: 500px;
+    &__header {
+      order: 1;
+    }
+    &__content {
+      width: 500px;
+      order: 0;
+    }
+    &__description {
+      order: 2;
+      &_large {
+        display: none;
+      }
+      &_small {
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid lightgray;
+        padding-top: 10px;
+      }
+    }
   }
 }
