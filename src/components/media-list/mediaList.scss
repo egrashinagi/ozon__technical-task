@@ -85,8 +85,10 @@
     &-like {
       display: flex;
       flex-direction: row;
+      margin-bottom: 5px;
 
       &-image {
+        margin-top: -4px;
         background-image: url(//instagramstatic-a.akamaihd.net/h1/sprites/core/e05e5e.png);
         background-repeat: no-repeat;
         background-position: -207px -229px;
@@ -132,6 +134,7 @@
 
         border-top: 1px solid lightgray;
         padding-top: 10px;
+        margin-top: -2px;
       }
     }
   }
