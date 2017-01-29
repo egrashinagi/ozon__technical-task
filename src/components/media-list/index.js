@@ -18,5 +18,23 @@ export default class MediaList {
       }
     }
     lists.push(list); // последний проход будет самым маленьким и в if не попадает так что надо добваить отдельно  
+
+    // строим 
+    element.innerHTML = this.tempalte({
+      lists: lists,
+      calcTime: this.calcTime
+    });
   }
+
+  calcTime(date) {
+    let result;
+    const hours = (new Date() - new Date(date * 1000)) / (60 * 60 * 1000);
+    if (hours < 24) {
+      result = Math.round(hours) + 'h';
+    } else if (hours > 24) {
+      result = Math.round(hours / 24) + 'd'
+    }
+    return result;
+  }
+
 }
