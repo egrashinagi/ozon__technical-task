@@ -1,3 +1,7 @@
 .idea
 
+# modules
 node_modules/
+
+# build files
+dist
