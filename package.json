@@ -15,5 +15,8 @@
     "url": "https://github.com/sosnovskyas/ozon__technical-task/issues"
   },
   "homepage": "https://github.com/sosnovskyas/ozon__technical-task#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "webpack": "1.14.0"
+  }
 }
