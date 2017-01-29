@@ -1,3 +1,13 @@
+/*
+  NORMALIZE
+*/
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+/*
+  COMMON STYLES
+*/
+
 body,
 html {
   height: 100%;
@@ -5,4 +15,5 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
 }
