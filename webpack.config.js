@@ -47,7 +47,7 @@ module.exports = {
         loaders: [
             {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel?presets[]=es2015']},
             {test: /\.jade/, exclude: /node_modules/, loader: 'jade-loader'},
-            {test: /\.styl/, loader: ExtractTextPlugin.extract(['css', 'postcss', 'stylus?sourceMap'])}
+            {test: /\.scss$/, loader: ExtractTextPlugin.extract(['css', 'postcss', 'sass?sourceMap!postcss'])}
         ]
     },
 
