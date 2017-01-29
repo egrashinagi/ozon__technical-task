@@ -11,8 +11,7 @@ each list in lists
                 .media-list-item__header-caption_username= item.user.username
                 .media-list-item__header-caption_location= item.location ? item.location.name : null
             .media-list-item__header-right
-              .media-list-item__header-time
-                span= calcTime(item.created_time)
+              .media-list-item__header-time= calcTime(item.created_time)
           .media-list-item__header-bottom
             .media-list-item__description.media-list-item__description_small
               .media-list-item__description-like

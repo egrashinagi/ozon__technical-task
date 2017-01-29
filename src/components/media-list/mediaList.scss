@@ -51,6 +51,11 @@
       flex-direction: row;
     }
 
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+
     &-caption {
       display: flex;
       flex-direction: column;
@@ -68,6 +73,10 @@
         width: 50px;
         border-radius: 50%;
       }
+    }
+
+    &-time {
+      color: gray;
     }
   }
 
