@@ -24,6 +24,9 @@ export default class MediaList {
       lists: lists,
       calcTime: this.calcTime
     });
+
+    // чтоб не плодить лисенеры пользуем делегирование событий на корневом элементе 
+    element.addEventListener('click', this.onClickLike.bind(this));
   }
 
   calcTime(date) {
@@ -37,4 +40,10 @@ export default class MediaList {
     return result;
   }
 
+  onClickLike(event) {
+    // при баблинге события ловим и проверяем 
+    if (event.target.classList.contains('media-list-item__description-like-image')) {
+      alert(event.target.getAttribute('data-id'));
+    }
+  }
 }
