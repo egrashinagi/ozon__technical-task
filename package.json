@@ -17,6 +17,19 @@
   "homepage": "https://github.com/sosnovskyas/ozon__technical-task#readme",
   "description": "",
   "dependencies": {
-    "webpack": "1.14.0"
+    "autoprefixer": "6.7.0",
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "html-webpack-plugin": "2.26.0",
+    "jade": "1.11.0",
+    "jade-loader": "0.8.0",
+    "postcss-loader": "1.2.2",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2"
   }
 }
