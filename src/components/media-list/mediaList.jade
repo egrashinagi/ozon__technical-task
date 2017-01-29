@@ -1,0 +1,23 @@
+each list in lists
+  .media-list__column
+    each item in list
+      .media-list__item.media-list-item
+        .media-list-item__header
+          .media-list-item__header-left
+            .media-list-item__header-image
+              img(src=item.user.profile_picture).media-list-item__header-image-avatar
+            .media-list-item__header-caption
+              .media-list-item__header-caption_username= item.user.username
+              .media-list-item__header-caption_location= item.location ? item.location.name : null
+          .media-list-item__header-right
+            .media-list-item__header-time
+              span= calcTime(item.created_time)
+
+        .media-list-item__content
+          img(src=item.images.low_resolution.url).media-list-item__content-image
+
+        .media-list-item__description
+          .media-list-item__description-like
+            .media-list-item__description-like-image(data-id=item.id)
+            .media-list-item__description-like-count= item.likes.count
+          .media-list-item__description-caption= item.caption.text
