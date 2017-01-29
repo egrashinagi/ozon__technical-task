@@ -1,0 +1,19 @@
+{
+  "name": "ozon__technical-task",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sosnovsky Alexey <sosnovsky.as@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sosnovskyas/ozon__technical-task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sosnovskyas/ozon__technical-task/issues"
+  },
+  "homepage": "https://github.com/sosnovskyas/ozon__technical-task#readme",
+  "description": ""
+}
